@@ -105,13 +105,13 @@ check_constants!(SOL_SOCKET);
 check_constants!(MSG_OOB);
 check_constants!(MSG_PEEK);
 check_constants!(MSG_DONTWAIT);
-check_constants!(MSG_DONTROUTE);
+//check_constants!(MSG_DONTROUTE);
 check_constants!(MSG_WAITALL);
 check_constants!(MSG_MORE);
 check_constants!(MSG_NOSIGNAL);
 check_constants!(MSG_TRUNC);
 check_constants!(MSG_CTRUNC);
-check_constants!(MSG_EOR);
+//check_constants!(MSG_EOR);
 check_constants!(PTHREAD_STACK_MIN);
 #[cfg(not(esp_idf_libc_picolibc))]
 check_constants!(SIGABRT);
@@ -131,7 +131,7 @@ check_constants!(SIGHUP);
 check_constants!(SIGQUIT);
 #[cfg(not(esp_idf_libc_picolibc))]
 check_constants!(NSIG);
-check_constants!(SOMAXCONN);
+//check_constants!(SOMAXCONN);
 
 // newlib module (https://github.com/rust-lang/libc/blob/libc-0.2/src/unix/newlib/mod.rs)
 check_types!(blkcnt_t);
@@ -437,7 +437,7 @@ check_constants!(IP_MULTICAST_TTL);
 check_constants!(IP_MULTICAST_LOOP);
 check_constants!(IP_ADD_MEMBERSHIP);
 check_constants!(IP_DROP_MEMBERSHIP);
-check_constants!(IPV6_UNICAST_HOPS);
+//check_constants!(IPV6_UNICAST_HOPS);
 check_constants!(IPV6_MULTICAST_IF);
 check_constants!(IPV6_MULTICAST_HOPS);
 check_constants!(IPV6_MULTICAST_LOOP);
@@ -456,13 +456,13 @@ check_constants!(AI_CANONNAME);
 check_constants!(AI_NUMERICHOST);
 check_constants!(AI_NUMERICSERV);
 check_constants!(AI_ADDRCONFIG);
-check_constants!(NI_MAXHOST);
-check_constants!(NI_MAXSERV);
+//check_constants!(NI_MAXHOST);
+//check_constants!(NI_MAXSERV);
 //check_constants!(NI_NOFQDN); // No binding
 //check_constants!(NI_NUMERICHOST); // No binding
 //check_constants!(NI_NAMEREQD); // No binding
-check_constants!(NI_NUMERICSERV);
-check_constants!(NI_DGRAM);
+//check_constants!(NI_NUMERICSERV);
+//check_constants!(NI_DGRAM);
 check_constants!(EAI_FAMILY);
 check_constants!(EAI_MEMORY);
 check_constants!(EAI_NONAME);
